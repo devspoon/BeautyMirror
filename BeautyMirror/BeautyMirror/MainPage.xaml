@@ -5,14 +5,14 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="100" />
                 <RowDefinition />
-                <RowDefinition Height="400" />
+                <RowDefinition />
             </Grid.RowDefinitions>
-            
+
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
                 <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition Width="300" />
             </Grid.ColumnDefinitions>
 
             <BoxView Color="Green" />
@@ -20,33 +20,33 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
             <BoxView Grid.Column="1"
-                     Color="Blue" />
+                     Grid.RowSpan="2"
+                     Color="Black" />
             <Label Grid.Column="1"
-                   Text="Row 0, Column 1"
+                   Grid.RowSpan="2"
+                   TextColor="White"
+                   Text="Row 0 and 1, Columns 1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <BoxView Grid.Column="2"
+                     Color="Teal" />
+            <Label Grid.Column="2"
+                   Text="Row 0, Column 2"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
 
             <BoxView Grid.Row="1"
-                     Grid.ColumnSpan="2"
-                     Color="Black" />
+                     Color="Green"  />
             <Label Grid.Row="1"
-                   Grid.ColumnSpan="2"
-                   Text="Row 1, Columns 0 and 1"
+                   Text="Row 1, Column 0"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
-
-            <BoxView Grid.Row="2"
+            <BoxView Grid.Row="1"
+                     Grid.Column="2"
                      Color="Teal" />
-            <Label Grid.Row="2"
-                   Text="Row 2, Column 0"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" />
-            <BoxView Grid.Row="2"
-                     Grid.Column="1"
-                     Color="Purple" />
-            <Label Grid.Row="2"
-                   Grid.Column="1"
-                   Text="Row 2, Column 1"
+            <Label Grid.Row="1"
+                   Grid.Column="2"
+                   Text="Row 1, Column 2"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
         </Grid>

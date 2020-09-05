@@ -14,6 +14,7 @@ namespace BeautyMirror
     {
         public MainPage()
         {
+            NavigationPage.SetHasNavigationBar(this, false); //SetValue(NavigationPage.HasNavigationBarProperty, false);
             InitializeComponent();
         }
     }
