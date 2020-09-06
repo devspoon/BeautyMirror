@@ -1,6 +1,5 @@
 # BeautyMirror
-It's a app of tizen hackathon project for beauty AI smart mirror service
-
+it's a app of tizen hackathon project for beauty AI smart mirror service
 
 ## 팀명 및 팀원 
 * **팀명** :  Devspoon 
@@ -20,16 +19,22 @@ It's a app of tizen hackathon project for beauty AI smart mirror service
 2. 사용자가 QR 코드로 제품을 인식시키면 제품의 특성에 따라, 사용자가 보유한 제품들 중 함께 사용하면 좋을 화장품 종류를 알려주고 효율적인 화장 순서 및 방법을 제공함. 이로 인해 사용자는 배송 받은 화장품 샘플과 거울에 비친 사용자의 얼굴을 바탕으로, 전문가 수준의 화장 방법을 비대면, 개인 맞춤형으로 제공받을 수 있음.
 
 ## 파일 리스트 
-* 소스 파일
-  * BeautyMirror\BeautyMirror\MainPage.xaml
-  * BeautyMirror\BeautyMirror.Tizen\BeautyMirror.Tizen.cs
+* 임도현 수정 파일 리스트
+  - ServerSDK.cs (통신 : Modules 폴더)
+  - ListPageViewModel.cs (통신 : ViewModels)
+
+* 임태연 수정 파일 리스트
+  - ListPage.xamls ( 디자인 : View )
+
+* 강동훈 수정 파일 리스트
+  - BeautyMirror\BeautyMirror\MainPage.xaml (main ui)
+  - BeautyMirror\BeautyMirror.Tizen\BeautyMirror.Tizen.cs (main ui)
 
 ## 코드 기여자 
 ### **Tizen-Apps**
-
-* BeautyMirror\BeautyMirror\MainPage.xaml 강동훈
-* BeautyMirror\BeautyMirror.Tizen\BeautyMirror.Tizen.cs 강동훈
-
+* Modules/ServerSDK.cs 임도현, 강동훈
+* ViewModels/ListPageViewModel.cs 임도현, 강동훈
+* View/ListPage.xamls 임태연
 
 ## 보드 
 * RPI4 : 하드웨어 제작, https://github.com/devspoon/BeautyMirror
