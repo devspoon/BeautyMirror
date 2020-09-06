@@ -1,3 +1,4 @@
+using ElmSharp;
 using System;
 using Xamarin.Forms;
 
@@ -7,6 +8,7 @@ namespace BeautyMirror
     {
         protected override void OnCreate()
         {
+            MainWindow.IndicatorMode = IndicatorMode.Hide;
             base.OnCreate();
 
             LoadApplication(new App());
